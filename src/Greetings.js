@@ -3,7 +3,7 @@ import axios from "axios";
 export default function Greetings(props) {
   function sendInfo(response) {
     alert(
-      `It is currently ${response.data.temperature.current}°C here in ${response.data.city} with a humidity of ${response.data.temperature.humidity}`
+      `It is currently ${response.data.temperature.current}°C here in ${response.data.city} with a humidity of ${response.data.temperature.humidity} and windspeed of ${response.data.wind.speed}`
     );
   }
 
